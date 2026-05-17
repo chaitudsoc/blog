@@ -1,0 +1,5 @@
+region_name = "us-east-1"
+environment = "dev"
+cluster_name = "jerney-eks-cluster"
+vpc_cidr = "10.0.0.0/16"
+cluster_version = "1.24"
