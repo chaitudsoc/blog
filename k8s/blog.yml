@@ -194,7 +194,7 @@ spec:
         command: ['sh', '-c', 'until nc -z jerney-db-service 5432; do echo waiting for db; sleep 5; done; echo db is up;']
     containers:
       - name: jerney-backend
-        image: 
+        image: ghcr.io/chaitudsoc/jerney-backend:latest
         ports:
           - containerPort: 8080
             protocol: TCP
@@ -318,7 +318,7 @@ spec:
         effect: "NoSchedule"
     containers:
       - name: frontend-container
-        image: jerney/frontend:latest
+        image: ghcr.io/chaitudsoc/jerney-frontend:latest
         ports:
           - containerPort: 8080
             protocol: TCP
